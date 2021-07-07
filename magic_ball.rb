@@ -34,5 +34,11 @@ answers = [
 #приветствие перед ответом
 puts greets.sample, "\n\n"
 
+#пауза для загадочности
+#sleep(4.minutes)
+#sleep(2.hours); sleep(3.days) # etc., etc.
+#sleep(0.5) # half a second
+sleep(2)
+
 #метод массива sample возвращает случайный элемент
 puts answers.sample
