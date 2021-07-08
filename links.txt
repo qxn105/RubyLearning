@@ -1,0 +1,1 @@
+﻿What is the “right” way to iterate through an array in Ruby? http://bit.ly/2kJ0CZj 
