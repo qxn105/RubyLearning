@@ -1,33 +1,30 @@
-﻿fruits = ["apple", "banana", "orange"]
-puts fruits.class.name
+﻿# Объединение массивов
+# Объявите в программе два разных массива строк: один, состоящий из нескольких мужских имен, другой — из женских.
 
-puts
-puts fruits[0]
+# Как угодно создайте третий массив так, чтобы он состоял из всех элементов первого и второго массивов 
+# (т. е. из всех мужских и женских имен), не повторяя эти имена в коде. То есть, используя элементы из первых двух массивов.
 
-puts
-puts fruits
+# Потом выведите все три массива на экран.
 
-puts
-puts fruits.to_s
+# Например:
+# 
+# Мужчины
+# ["Gena", "George", "Misha"]
+# Женщины
+# ["Katrin", "Liza", "Masha"]
+# Все вместе
+# ["Gena", "George", "Misha", "Katrin", "Liza", "Masha"]
 
-basket = []
-basket << "fruit1"
-basket << "fruit2" << "fruit3"
-puts
-puts basket.to_s
+# Если вы пользуетесь Windows, то пока используйте только английские буквы в именах, иначе в методе to_s на экран выведется абракадабра.
+# Эту проблему мы решим в будущих уроках.
 
-basket.push("cherry", "mango")
-puts
-puts basket.to_s
+MEN = ["Gena", "George", "Misha"]
+WOMEN = ["Katrin", "Liza", "Masha"]
+all = []
 
-basket << "fruit2"
-puts
-puts basket.to_s
+#all = MEN + WOMEN
+all.concat(MEN, WOMEN)
 
-basket.delete("fruit2")
-puts
-puts basket.to_s
-
-basket.delete_at(0)
-puts
-puts basket.to_s
+puts MEN.to_s
+puts WOMEN.to_s
+puts all.to_s
