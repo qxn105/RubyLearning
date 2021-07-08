@@ -23,7 +23,8 @@ def sklonenie(number, krokodil, krokodila, krokodilov)
 
   #==========================================================
   # с числами от 5 до 20 используется множественное склонение
-  return krokodilov if (10...20) === number
+  ostatok = number % 100
+  return krokodilov if (10...20) === ostatok
 
   # Так как склонение определяется последней цифрой в числе, вычислим остаток
   # от деления числа number на 10
