@@ -6,20 +6,14 @@
 
 # Создайте экземпляр хамелеона и поменяйте его цвет несколько раз.
 
-class Cameleo
+class Person
 
-  def initialize
-  	@color = "зелёный"
-  	puts "При рождении хамелион #{@color}"
+  def initialize(first_name, middle_name)
+		@first_name = first_name
+		@middle_name = middle_name
   end
   
-  def change_color(new_color)
-  	@color = new_color
-  	puts "Хамелион поменял свой цвет на #{@color}"
+  def full_name
+		return "#{@first_name} #{@middle_name}"
   end
-
-  def color
-  	return @color
-  end
-
 end
