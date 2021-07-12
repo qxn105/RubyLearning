@@ -6,7 +6,7 @@ class UI
 	end
 
 	def get_str
-		return STDIN.gets.force_encoding(Encoding.locale_charmap).encode("UTF-8").chomp.downcase
+		return STDIN.gets.force_encoding(Encoding.locale_charmap).encode("UTF-8").chomp
 	end
 end
 
