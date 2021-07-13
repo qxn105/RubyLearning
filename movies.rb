@@ -19,5 +19,8 @@ f_lines = f.readlines
 f.close
 f_lines[0][0] = ''
 
+n = rand(f_lines.size)
+n -= 1 if n%2 == 1
 puts "   Сегодня Вам предлагается к просмотру фильм:"
-puts "   #{f_lines.sample}"
+puts "   #{f_lines[n]}"
+puts "#{f_lines[n+1]}"
