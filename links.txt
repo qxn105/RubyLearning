@@ -1,3 +1,0 @@
-﻿Работа с файлами в Ruby (1) - http://www.techotopia.com/index.php/Working_with_Files_in_Ruby
-Работа с файлами в Ruby (2) - http://www.techotopia.com/index.php/Working_with_Files_in_Ruby
-Когда ты легко плаваешь в плтоке современных технологий - http://developerslife.ru/9580
