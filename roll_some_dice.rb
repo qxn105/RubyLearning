@@ -9,9 +9,14 @@
 # переменную number.
 puts 'How many dice?'
 number = gets.to_i
+puts
 
 # С помощью мтеода целого числа times запускаем цикл, который заданное число раз
 # повторяет бросок кубика.
+sum = 0
 number.times do
-  puts rand(6) + 1
+  d =  rand(6) + 1
+  puts d
+	sum += d
 end
+puts "Sum of dice: #{sum}"
