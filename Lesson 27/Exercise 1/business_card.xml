@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<business_card>
+  <first_name>Александр</first_name>
+  <second_name>Викторович</second_name>
+  <last_name>Богданов</last_name>
+  <phone>+7 914 940-21-87</phone>
+  <email>qxn105@mail.ru</email>
+  <skills>Начинающий программист на Ruby</skills>
+</business_card>
