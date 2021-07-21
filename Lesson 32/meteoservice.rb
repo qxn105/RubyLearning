@@ -30,13 +30,16 @@ end
 
 # Массив строк для облачности, описанный на сайте метеосервиса
 CLOUDINESS = %w(Ясно Малооблачно Облачно Пасмурно).freeze
+PRECIPITATION  = ['','','','смешанные','дождь','ливень','снег','снег','гроза','нет данных','без осадков'].freeze
 
 # Сформируем адрес запроса с сайта метеосервиса
 #
 # 37 - Москва, адрес для своего города можно получить здесь:
 #
 # http://www.meteoservice.ru/content/export.html
-uri = URI.parse('https://xml.meteoservice.ru/export/gismeteo/point/37.xml')
+#uri = URI.parse('https://xml.meteoservice.ru/export/gismeteo/point/37.xml')
+uri = URI.parse('https://xml.meteoservice.ru/export/gismeteo/point/163.xml')
+
 
 # Отправляем HTTP-запрос по указанному адресу и записываем ответ в переменную
 # response.
@@ -66,8 +69,12 @@ max_wind = forecast.elements['WIND'].attributes['max']
 clouds_index = forecast.elements['PHENOMENA'].attributes['cloudiness'].to_i
 clouds = CLOUDINESS[clouds_index]
 
+precipitation_index = forecast.elements['PHENOMENA'].attributes['precipitation'].to_i
+precipitation =  PRECIPITATION[precipitation_index]
+
 # Выводим всю информацию на экран
 puts city_name
 puts "Температура — от #{min_temp} до #{max_temp} С"
 puts "Ветер #{max_wind} м/с"
 puts clouds
+puts precipitation
